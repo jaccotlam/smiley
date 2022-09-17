@@ -50,7 +50,6 @@ input[type=range]::-moz-range-thumb {
 const calculateSmiley = (input) => {
   const rangeValueRange = range.getAttribute('max') ?? 100 - range.getAttribute('min') ?? 0;
   const rangeValue = input.value * (100 / rangeValueRange);
-  console.log(rangeValue);
   const smileyMainCircle = document.querySelector('svg .smiley-main-circle');
   const smileyPath = document.querySelector('svg path');
 

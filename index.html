@@ -41,7 +41,7 @@ input[type=range]::-moz-range-thumb {
    <path d="m136.81 141.53c.69 -26.17-64.11 -42-81.52-.73" style="fill:none; stroke: black; stroke-width: 3;"/>
  </svg>
 
- <input type="range" value="20" max="100" step="1"> 
+ <input type="range" value="0" max="10" step="1"> 
 </div>
 
 <script>
@@ -59,7 +59,7 @@ const calculateSmiley = (input) => {
   
   smileyPath.setAttribute('d', 'm136.81 '+height+'c.69 '+val1+'-64.11 '+val2+'-81.52-.73');
   
-  const hue = rangeValue * 0.6;
+  const hue = rangeValue * 1.2;
   const lightness = 40 + rangeValue * 0.1;
   smileyMainCircle.setAttribute('fill', 'hsl('+hue+', 100%, '+lightness+'%)');
 }
